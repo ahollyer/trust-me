@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ahollyer/trust-me/issues"
   },
-  "homepage": "https://github.com/ahollyer/trust-me#readme"
+  "homepage": "https://github.com/ahollyer/trust-me#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
