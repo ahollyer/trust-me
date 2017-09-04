@@ -2,7 +2,7 @@
 
 body {
   background: #1f1f1f;
-  color: #f2f2f2;
+  color: #1f1f1f;
 }
 
 .wrapper {
@@ -18,15 +18,31 @@ body {
   display: flex;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2rem;
-  border-right: .1em solid #f2f2f2;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {color: #1f1f1f;}
+    to {color: #f2f2f2;}
+}
+
+/******************************************************************************
+                                Typing Animation
+******************************************************************************/
+/* May be used for #message to create the appearance of the game typing its
+messages to the user. Haven't decided whether I will use this. May delete later. */
+
+  /*border-right: .1em solid #f2f2f2;
   width: 16.5em;
   width: 26ch;
   margin: 2em 1em;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: typing 2s steps(26, end),
+  -webkit-animation: typing 3s steps(26, end),
   blink-caret .5s step-end infinite alternate;
-}
 
 @-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }*/
